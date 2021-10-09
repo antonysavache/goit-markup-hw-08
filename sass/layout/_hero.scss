@@ -1,0 +1,54 @@
+.button-main {
+  background: var(--button-color);
+  box-shadow: 0px 4px 4px var(--color-boxshadow);
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: 0px;
+  color: var(--white-color);
+  width: 200px;
+  height: 50px;
+      &:hover {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+}
+
+  .hero-content {
+  text-align: center;
+  max-width: 696px;
+  }
+  
+  .hero-section {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)),
+      url("../img/hero-bg.jpg");
+    background-size: cover   ;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  max-width: 1600px;
+  }
+  
+  .hero-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .texthello {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+  

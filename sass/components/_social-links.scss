@@ -1,0 +1,87 @@
+  .social-links-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 10px;
+        &:last-child {
+        margin-right: 0px;}
+  }
+
+
+  .icons-social-links {
+    fill: var(--for-small-pics);
+    width: 20px;
+    height: 20px;
+  }
+  
+  .buttons-social-links {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus{
+    background-color: var(--hover-color);
+        }
+        &:hover .icons-social-links,
+        &:focus .icons-social-links {
+            fill: var(--white-color);
+        }
+        
+  }
+  
+  .ourteam-joinus-sociallinks {
+    margin-right: 10px;
+    &:last-child {
+    margin-right: 0px;
+  }
+  }
+
+
+  
+  .buttons-social-links-footer {
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: var(--footer-links-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        background-color: var(--hover-color);
+        }
+  }
+  
+  .footer-social-links-li {
+    margin-right: 10px;
+        &:last-child {
+    margin-right: 0px;
+  }
+  }
+  
+  .social-links-list-footer {
+    display: flex;
+    padding: 0px;
+  }
+  
+  .icons-social-links-footer {
+    fill: var(--white-color);
+    width: 20px;
+    height: 20px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  

@@ -1,0 +1,62 @@
+.close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+    &:focus .close-button {
+    fill: var(--hover-color);
+    }
+  }
+  
+  .modal-button-close-prop {
+    fill: var(--black-color);
+    display: inline;
+    width: 11px;
+    height: 11px;
+    margin: 0px;
+  }
+
+  .modal-btn-kostil {
+    display: flex;
+  align-items: center;
+    flex-direction: column;
+  }
+  
+  .modal-form .modal-form-btn {
+    align-items: center;
+  }
+  
+  .modal-form-btn {
+    padding: 10px 56px 10px 56px;
+    font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background-color: var(--button-color);
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: 0px;
+  color: var(--white-color);
+  }
+  
+  .modal-checkbox-margin {
+    margin-right: 8px;
+  }
+
+  .close-button {
+    fill: var(--black-color);
+    width: 11px;
+    height: 11px;
+  }
+

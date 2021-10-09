@@ -1,0 +1,120 @@
+.header {
+    border-bottom: solid var(--border-solid) 1px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  .head-cotacts {
+    display: flex;
+  }
+  
+  .head-cotacts-li {
+    margin-right: 50px;
+        &:last-child {
+    margin-right: 0px;
+  }
+  }
+  
+  .head-button {
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.36;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    color: var(--h-color);
+    display: flex;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: var(--hover-color);
+        }
+  }
+  
+  .active {
+    color: var(--hover-color);
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.36;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+        &::after {
+    display: block;
+    position: absolute;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0; /*задаём длинну линии до наведения курсора*/
+    height: 2px; /*задаём ширину линии*/
+    background-color: var(--button-color); /*задаём цвет линии*/
+    content: "";
+    height: 4px;
+    top: 49px;
+    width: 100%;
+    transition: width;
+    border-radius: 2px;
+  }
+  }
+  
+  .li-head-button {
+    margin-right: 50px;
+    display: flex;
+    position: relative;
+        &:last-child {
+    margin-right: 0px;
+  }
+  }
+  
+
+  
+  .contacts-top {
+    color: var(--content-color);
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: var(--hover-color);
+        }
+        
+        &:hover .icons-contacts,
+        &:focus .icons-contacts{
+            fill: var(--hover-color);
+            }
+  }
+  
+  .active {
+    color: var(--hover-color);
+  }
+  
+
+  
+  .icons-contacts {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--content-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+        fill: var(--hover-color);
+        }
+  }
