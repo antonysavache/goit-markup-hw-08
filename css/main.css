@@ -551,7 +551,7 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .what-are-we-do-sec {
     display: contents;
   }
@@ -736,12 +736,17 @@ img {
 
 @media screen and (min-width: 769px) {
   .footer-con {
-    display: flex;
     justify-content: space-between;
     align-items: baseline;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-con {
+    display: flex;
   }
 }
 
