@@ -4,6 +4,8 @@
   padding-bottom: 16px;
   justify-content: space-between;
   max-height: 60px;
+  margin-left: auto;
+margin-right: auto;
   @media screen and (min-width: 768px) {
     display: flex;
 flex-direction: column;
@@ -11,10 +13,13 @@ max-height: 80px;
 padding-top: 21px;
 padding-bottom: 21px;
   }
+  @media screen and(min-width: 1200px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .header-info {
-  margin: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +45,6 @@ flex-direction: column;
   font-weight: 500;
   line-height: 1.36;
   letter-spacing: 0.02em;
-  font-size: 14px;
   color: var(--h-color);
   display: flex;
   transition-property: color;
@@ -102,6 +106,7 @@ margin-bottom: 0px;
 }
 
 .contacts-top {
+  font-family: Roboto;
   height: 14px;
   color: var(--content-color);
   white-space: nowrap;

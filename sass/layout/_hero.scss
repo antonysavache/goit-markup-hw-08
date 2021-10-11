@@ -24,6 +24,9 @@
 .hero-content {
   text-align: center;
   max-width: 360px;
+  @media screen and(min-width:1200px){
+    max-width: 696px;
+  }
 }
 
 .hero-section {
@@ -32,8 +35,14 @@
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
-  max-width: 1600px;
   display: flex;
+  justify-content: center;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)),
+    url("../img/hero-bg@2x.jpg");
+  }
 }
 
 .hero-container {
@@ -51,4 +60,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  @media screen and(min-width: 1200px) {
+    font-size: 44px;
+  }
 }

@@ -16,23 +16,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-info">
+        <a class="webstudio" href="./index.html"
+          >Web<span class="colorstudio-top">Studio</span></a
+        >
         <nav class="menu">
-          <a class="webstudio" href="./index.html"
-            >Web<span class="colorstudio-top">Studio</span></a
-          >
           <ul class="ul-menu">
-            
             <li class="li-head-button">
-                <a class="head-button " href="./index.html">Студия</a>
+              <a class="head-button active" href="./index.html">Студия</a>
             </li>
             <li class="li-head-button">
-              <a class="head-button active" href="./portfolio.html">Портфолио</a>
+              <a class="head-button" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="li-head-button">
               <a class="head-button" href="">Контакты</a>
@@ -44,7 +42,7 @@
           <li class="head-cotacts-li">
             <a class="contacts-top" href="mailto:info@devstudio.com">
               <svg class="icons-contacts">
-                <use class="test" href="./img/symbol-defs.svg#icon-mail"></use>
+                <use href="./img/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
@@ -61,8 +59,31 @@
             </a>
           </li>
         </ul>
+
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
       </div>
     </header>
+
 
     <main>
       <section class="section portfolio">
@@ -89,15 +110,20 @@
             <li class="portfolio-box">
               <a class="pic-list-portfolio-a" href="">
                 <div class="portfolio-box-div animate__animated">
-                  <img
-                    class="portfolio-box-img"
-                    src="./img/technokryak.jpg"
-                    alt="technokryak pic"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="name-box-picture">
+                    <source
+                    srcset="./img/portfolio-desktop1x/technokryak.jpg 1x, ./img/portfolio-desktop2x/technokryak@2x.jpg 2x"
+                    media="(min-width: 1200px)" />  
+                    <source
+                    srcset="./img/portfolio-tablet1x/technokryak.jpg 1x, ./img/portfolio-tablet2x/technokryak@2x.jpg 2x"
+                    media="(min-width: 768px)" />  
+                    <source
+                    srcset="./img/portfolio-mobile1x/technokryak.jpg 1x, ./img/portfolio-mobile2x/technokryak@2x.jpg 2x"
+                    media="(max-width: 767px)" />  
+                    <img class="about-list-img" src="#" alt="coding" />
+                </picture>
                   <div
-                    class="image-overlay animate__animated animate__slideInUp"
+                    class="image-overlay"
                   >
                     <p class="portfolio-pic-hover-p">
                       Технокряк это современная площадка распространения
@@ -116,15 +142,20 @@
             <li class="portfolio-box">
               <a class="pic-list-portfolio-a" href="">
                 <div class="portfolio-box-div animate__animated">
-                  <img
-                    class="portfolio-box-img"
-                    src="./img/poster.jpg"
-                    alt="poster pic"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="name-box-picture">
+                    <source
+                    srcset="./img/portfolio-desktop1x/new-orlean.jpg 1x, ./img/portfolio-desktop2x/new-orlean@2x.jpg 2x"
+                    media="(min-width: 1200px)" />  
+                    <source
+                    srcset="./img/portfolio-tablet1x/new-orlean.jpg 1x, ./img/portfolio-tablet2x/new-orlean@2x.jpg 2x"
+                    media="(min-width: 768px)" />  
+                    <source
+                    srcset="./img/portfolio-mobile1x/new-orlean.jpg 1x, ./img/portfolio-mobile2x/new-orlean@2x.jpg 2x"
+                    media="(max-width: 767px)" />  
+                    <img class="about-list-img" src="#" alt="coding" />
+                </picture>
                   <div
-                    class="image-overlay animate__animated animate__slideInUp"
+                    class="image-overlay animate__animated "
                   >
                     <p class="portfolio-pic-hover-p">
                       Технокряк это современная площадка распространения
@@ -143,15 +174,20 @@
             <li class="portfolio-box">
               <a class="pic-list-portfolio-a" href="">
                 <div class="portfolio-box-div animate__animated">
-                  <img
-                    class="portfolio-box-img"
-                    src="./img/seafood.jpg"
-                    alt="seafood pic"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="name-box-picture">
+                    <source
+                    srcset="./img/portfolio-desktop1x/seafood.jpg 1x, ./img/portfolio-desktop2x/seafood@2x.jpg 2x"
+                    media="(min-width: 1200px)" />                      
+                    <source
+                    srcset="./img/portfolio-tablet1x/seafood.jpg 1x, ./img/portfolio-tablet2x/seafood@2x.jpg 2x"
+                    media="(min-width: 768px)" />  
+                    <source
+                    srcset="./img/portfolio-mobile1x/seafood.jpg 1x, ./img/portfolio-mobile2x/seafood@2x.jpg 2x"
+                    media="(max-width: 767px)" />  
+                    <img class="about-list-img" src="#" alt="coding" />
+                </picture>
                   <div
-                    class="image-overlay animate__animated animate__slideInUp"
+                    class="image-overlay animate__animated "
                   >
                     <p class="portfolio-pic-hover-p">
                       Технокряк это современная площадка распространения
@@ -171,15 +207,20 @@
             <li class="portfolio-box">
               <a class="pic-list-portfolio-a" href="">
                 <div class="portfolio-box-div animate__animated">
-                  <img
-                    class="portfolio-box-img"
-                    src="./img/headphones.jpg"
-                    alt="headphones pic"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="name-box-picture">
+                    <source
+                    srcset="./img/portfolio-desktop1x/headphones.jpg 1x, ./img/portfolio-desktop2x/headphones@2x.jpg 2x"
+                    media="(min-width: 1200px)" />  
+                    <source
+                    srcset="./img/portfolio-tablet1x/headphones.jpg 1x, ./img/portfolio-tablet2x/headphones@2x.jpg 2x"
+                    media="(min-width: 768px)" />  
+                    <source
+                    srcset="./img/portfolio-mobile1x/headphones.jpg 1x, ./img/portfolio-mobile2x/headphones@2x.jpg 2x"
+                    media="(max-width: 767px)" />  
+                    <img class="about-list-img" src="#" alt="coding" />
+                </picture>
                   <div
-                    class="image-overlay animate__animated animate__slideInUp"
+                    class="image-overlay animate__animated "
                   >
                     <p class="portfolio-pic-hover-p">
                       Технокряк это современная площадка распространения
@@ -199,15 +240,20 @@
             <li class="portfolio-box">
               <a class="pic-list-portfolio-a" href="">
                 <div class="portfolio-box-div animate__animated">
-                  <img
-                    class="portfolio-box-img"
-                    src="./img/boxes.jpg"
-                    alt="boxes pic"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="name-box-picture">
+                    <source
+                    srcset="./img/portfolio-desktop1x/boxes.jpg 1x, ./img/portfolio-desktop2x/boxes@2x.jpg 2x"
+                    media="(min-width: 1200px)" />  
+                    <source
+                    srcset="./img/portfolio-tablet1x/boxes.jpg 1x, ./img/portfolio-tablet2x/boxes@2x.jpg 2x"
+                    media="(min-width: 768px)" />  
+                    <source
+                    srcset="./img/portfolio-mobile1x/boxes.jpg 1x, ./img/portfolio-mobile2x/boxes@2x.jpg 2x"
+                    media="(max-width: 767px)" />  
+                    <img class="about-list-img" src="#" alt="coding" />
+                </picture>
                   <div
-                    class="image-overlay animate__animated animate__slideInUp"
+                    class="image-overlay animate__animated "
                   >
                     <p class="portfolio-pic-hover-p">
                       Технокряк это современная площадка распространения
@@ -227,15 +273,20 @@
             <li class="portfolio-box">
               <a class="pic-list-portfolio-a" href="">
                 <div class="portfolio-box-div animate__animated">
-                  <img
-                    class="portfolio-box-img"
-                    src="./img/appletop.jpg"
-                    alt="appletop pic"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="name-box-picture">
+                    <source
+                    srcset="./img/portfolio-desktop1x/appletop.jpg 1x, ./img/portfolio-desktop2x/appletop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />  
+                    <source
+                    srcset="./img/portfolio-tablet1x/appletop.jpg 1x, ./img/portfolio-tablet2x/appletop@2x.jpg 2x"
+                    media="(min-width: 768px)" />  
+                    <source
+                    srcset="./img/portfolio-mobile1x/appletop.jpg 1x, ./img/portfolio-mobile2x/appletop@2x.jpg 2x"
+                    media="(max-width: 767px)" />  
+                    <img class="about-list-img" src="#" alt="coding" />
+                </picture>
                   <div
-                    class="image-overlay animate__animated animate__slideInUp"
+                    class="image-overlay animate__animated "
                   >
                     <p class="portfolio-pic-hover-p">
                       Технокряк это современная площадка распространения
@@ -255,15 +306,20 @@
             <li class="portfolio-box">
               <a class="pic-list-portfolio-a" href="">
                 <div class="portfolio-box-div animate__animated">
-                  <img
-                    class="portfolio-box-img"
-                    src="./img/book.jpg"
-                    alt="book pic"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="name-box-picture">
+                    <source
+                    srcset="./img/portfolio-desktop1x/book.jpg 1x, ./img/portfolio-desktop2x/book@2x.jpg 2x"
+                    media="(min-width: 1200px)" />  
+                    <source
+                    srcset="./img/portfolio-tablet1x/book.jpg 1x, ./img/portfolio-tablet2x/book@2x.jpg 2x"
+                    media="(min-width: 768px)" />  
+                    <source
+                    srcset="./img/portfolio-mobile1x/book.jpg 1x, ./img/portfolio-mobile2x/book@2x.jpg 2x"
+                    media="(max-width: 767px)" />  
+                    <img class="about-list-img" src="#" alt="coding" />
+                </picture>
                   <div
-                    class="image-overlay animate__animated animate__slideInUp"
+                    class="image-overlay animate__animated "
                   >
                     <p class="portfolio-pic-hover-p">
                       Технокряк это современная площадка распространения
@@ -283,15 +339,20 @@
             <li class="portfolio-box">
               <a class="pic-list-portfolio-a" href="">
                 <div class="portfolio-box-div animate__animated">
-                  <img
-                    class="portfolio-box-img"
-                    src="./img/tag.jpg"
-                    alt="tag pic"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="name-box-picture">
+                    <source
+                    srcset="./img/portfolio-desktop1x/tag.jpg 1x, ./img/portfolio-desktop2x/tag@2x.jpg 2x"
+                    media="(min-width: 1200px)" />  
+                    <source
+                    srcset="./img/portfolio-tablet1x/tag.jpg 1x, ./img/portfolio-tablet2x/tag@2x.jpg 2x"
+                    media="(min-width: 768px)" />  
+                    <source
+                    srcset="./img/portfolio-mobile1x/tag.jpg 1x, ./img/portfolio-mobile2x/tag@2x.jpg 2x"
+                    media="(max-width: 767px)" />  
+                    <img class="about-list-img" src="#" alt="coding" />
+                </picture>
                   <div
-                    class="image-overlay animate__animated animate__slideInUp"
+                    class="image-overlay animate__animated "
                   >
                     <p class="portfolio-pic-hover-p">
                       Технокряк это современная площадка распространения
@@ -311,15 +372,20 @@
             <li class="portfolio-box">
               <a class="pic-list-portfolio-a" href="">
                 <div class="portfolio-box-div animate__animated">
-                  <img
-                    class="portfolio-box-img"
-                    src="./img/laptop.jpg"
-                    alt="laptop pic"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="name-box-picture">
+                    <source
+                    srcset="./img/portfolio-desktop1x/laptop.jpg 1x, ./img/portfolio-desktop2x/laptop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />  
+                    <source
+                    srcset="./img/portfolio-tablet1x/laptop.jpg 1x, ./img/portfolio-tablet2x/laptop@2x.jpg 2x"
+                    media="(min-width: 768px)" />  
+                    <source
+                    srcset="./img/portfolio-mobile1x/laptop.jpg 1x, ./img/portfolio-mobile2x/laptop@2x.jpg 2x"
+                    media="(max-width: 767px)" />  
+                    <img class="about-list-img" src="#" alt="coding" />
+                </picture>
                   <div
-                    class="image-overlay animate__animated animate__slideInUp"
+                    class="image-overlay animate__animated"
                   >
                     <p class="portfolio-pic-hover-p">
                       Технокряк это современная площадка распространения
@@ -342,25 +408,25 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-con">
+      <div class="footer-con">
         <div class="footer-two-sides left">
           <div class="div-button-and-adress">
             <a class="lowwebstudio" href="./index.html"
               >Web<span class="webstudio-low">Studio</span></a
             >
-  
+
             <address>
               <ul class="footer-adress">
                 <li class="addr-prop">
                   <p>г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
-  
+
                 <li class="li-footer">
                   <a class="footer-adress-prop" href="mailto:info@devstudio.com"
                     >info@example.com</a
                   >
                 </li>
-  
+
                 <li class="li-footer">
                   <a class="footer-adress-prop" href="tel:+380961111111"
                     >+38 099 111 11 11</a
@@ -403,29 +469,27 @@
               </li>
             </ul>
           </div>
-
         </div>
         <div class="footer-two-sides">
           <p class="footer-form-right-side-p">Подпишитесь на рассылку</p>
           <form action="#" class="footer-form">
-<div class="footer-form-right-side-mailandbut">
-<label class="footer-div-right-side-mail-label">
-    <input name="user_mail" type="email" class="footer-form-input" placeholder="E-mail" required>
-    <span class="modal-form-icon"></span>
-</label>
-<button type="submit" class="footer-form-right-side-button">Подписаться
-<svg class="footer-icon-telegram">
-  <use href="./img/symbol-defs.svg#icon-telegram">
-  </use>
-</svg>
-</button>
-</div>
-
-
-        </form>
-
+            <label class="footer-div-right-side-mail-label">
+              <input
+                name="user_mail"
+                type="email"
+                class="footer-form-input"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button type="submit" class="footer-form-right-side-button">
+              Подписаться
+              <svg class="footer-icon-telegram">
+                <use href="./img/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
-
       </div>
     </footer>
   </body>
