@@ -13,13 +13,14 @@
   &:focus .client-links-border .icons-clients {
     fill: var(--hover-color);
   }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @media screen and (min-width: 769px) and (max-width: 1199px) {
     flex-basis: calc((100% - 120px) / 3);
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px){
     flex-basis: calc((100% - 180px) / 6);
   }
 }
+
 
 .icons-clients {
   width: 106px;
