@@ -24,6 +24,11 @@ body {
   text-decoration: underline;
 }
 
+.icon-open-mob-menu {
+  width: 24px;
+  height: 16px;
+}
+
 .menu-toggle {
   display: flex;
   align-items: center;
@@ -169,8 +174,4 @@ body {
   letter-spacing: 0.02em;
 }
 
-.icon-open-mob-menu {
-  fill: var(--black-color);
-  width: 24px;
-  height: 16px;
-}
+
