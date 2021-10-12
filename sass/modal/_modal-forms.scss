@@ -145,6 +145,7 @@
 .modal-form-check:checked + .modal-form-check-label::before {
   background-color: var(--hover-color);
   fill: var(--white-color);
+  border: 0px;
 }
 
 .modal-form-check-label {
@@ -183,4 +184,8 @@
   @media screen and (min-width: 1200px) {
     display: none;
   }
+}
+
+.modal-form-check-link {
+  color: var(--button-color);
 }
