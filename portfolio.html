@@ -27,10 +27,10 @@
         <nav class="menu">
           <ul class="ul-menu">
             <li class="li-head-button">
-              <a class="head-button active" href="./index.html">Студия</a>
+              <a class="head-button" href="./index.html">Студия</a>
             </li>
             <li class="li-head-button">
-              <a class="head-button" href="./portfolio.html">Портфолио</a>
+              <a class="head-button active" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="li-head-button">
               <a class="head-button" href="">Контакты</a>
@@ -86,6 +86,57 @@
 
 
     <main>
+      <div class="container">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="icon-close-mob-menu" width="24" height="24">
+              <use href="./img/symbol-defs.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+
+          <nav class="nav-mob-menu">
+            <ul class="mob-ul-menu">
+              <li class="mob-li-head-button">
+                <a class="mob-head-button" href="./index.html">Студия</a>
+              </li>
+              <li class="mob-li-head-button">
+                <a class="mob-head-button" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mob-li-head-button">
+                <a class="mob-head-button" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <ul class="mob-head-contacts">
+              <li class="mob-head-contacts-li">
+                <a href="mailto:info@devstudio.com" class="mob-head-contacts-a"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mob-head-contacts-li">
+                <a href="tel:+380961111111" class="mob-head-contacts-a"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-head-links">
+              <li class="mob-head-links-li">
+                <a class="mob-head-links-a" href="">Instagram</a>
+              </li>
+              <li class="mob-head-links-li">
+                <a class="mob-head-links-a" href="">Twitter</a>
+              </li>
+              <li class="mob-head-links-li">
+                <a class="mob-head-links-a" href="">Facebook</a>
+              </li>
+              <li class="mob-head-links-li">
+                <a class="mob-head-links-a" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <section class="section portfolio">
         <div class="container">
           <ul class="button-list">
@@ -492,5 +543,6 @@
         </div>
       </div>
     </footer>
+    
   </body>
 </html>
