@@ -5,13 +5,13 @@
   justify-content: space-between;
   max-height: 60px;
   margin-left: auto;
-margin-right: auto;
+  margin-right: auto;
   @media screen and (min-width: 768px) {
     display: flex;
-flex-direction: column;
-max-height: 80px;
-padding-top: 21px;
-padding-bottom: 21px;
+    flex-direction: column;
+    max-height: 80px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   @media screen and(min-width: 1200px) {
     padding-left: 15px;
@@ -24,13 +24,19 @@ padding-bottom: 21px;
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 1200px;
+    margin: 0px;
+  }
 }
 
 .head-cotacts {
   display: none;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -64,11 +70,11 @@ flex-direction: column;
     margin-right: 0px;
     margin-bottom: 0px;
   }
-  @media screen and (min-width: 1200px){
-margin-bottom: 0px;
-&:last-child {
-  margin-left: 30px;
-}
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    &:last-child {
+      margin-left: 30px;
+    }
   }
 }
 
@@ -127,9 +133,9 @@ margin-bottom: 0px;
   &:focus .icons-contacts {
     fill: var(--hover-color);
   }
-  @media screen and (min-width: 1200px){
-height: 16px;
-}
+  @media screen and (min-width: 1200px) {
+    height: 16px;
+  }
 }
 
 .active {
@@ -148,8 +154,8 @@ height: 16px;
   &:hover {
     fill: var(--hover-color);
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     height: 16px;
     width: 10px;
-    }
+  }
 }

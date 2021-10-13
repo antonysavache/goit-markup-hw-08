@@ -8,7 +8,7 @@
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @media screen and (min-width: 481px) {
     max-width: 768px;
     padding-left: 76px;
     padding-right: 89px;
@@ -22,6 +22,8 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
