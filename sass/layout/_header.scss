@@ -19,19 +19,6 @@
   }
 }
 
-.header-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-width: 1200px;
-    margin: 0px;
-  }
-}
-
 .head-cotacts {
   display: none;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
