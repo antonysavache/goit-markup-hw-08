@@ -1,0 +1,18 @@
+@mixin flexing($disp: flex, $jus-cont: center, $al-it: baseline) {
+  display: $disp;
+  justify-content: $jus-cont;
+  align-items: $al-it;
+}
+
+@mixin box-shadow() {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@mixin shadow() {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@mixin border($color) {
+  border: 1px solid $color;
+}

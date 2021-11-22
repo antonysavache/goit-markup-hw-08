@@ -1,0 +1,21 @@
+.mailing-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    @include flexing($jus-cont: space-between);
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+
+.mailing-btn-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}

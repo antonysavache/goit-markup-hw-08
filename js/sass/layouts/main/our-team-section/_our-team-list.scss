@@ -1,0 +1,40 @@
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.team-member {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-background-color);
+  @include box-shadow();
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}

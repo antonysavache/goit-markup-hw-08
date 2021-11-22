@@ -1,0 +1,37 @@
+.member-container {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  & > p {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+
+.specialization {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.member {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  color: var(--title-text-color);
+}
+
+.social-list {
+  display: inline-flex;
+}
+
+.social-item:not(:first-child) {
+  margin-left: 10px;
+}

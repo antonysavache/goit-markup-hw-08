@@ -1,0 +1,24 @@
+.social-link {
+  @include flexing($al-it: center);
+  width: 44px;
+  height: 44px;
+  border-radius: 50% 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-icon {
+  fill: var(--svg-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: var(--primary-background-color);
+  }
+}

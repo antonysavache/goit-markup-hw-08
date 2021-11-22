@@ -1,0 +1,17 @@
+.section-title.benefit {
+  text-align: center;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .section-title.benefit {
+    text-align: left;
+  }
+}

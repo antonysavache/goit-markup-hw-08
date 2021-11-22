@@ -1,0 +1,60 @@
+// ********** UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
+
+// ********** BASE
+@import "./base/main/common";
+@import "./base/main/container";
+@import "./base/main/section-paddings";
+
+// ********** COMPONENTS
+@import "./components/main/logo";
+@import "./components/main/section-title";
+@import "./components/main/buttons";
+@import "./components/main/social-links";
+
+// ********** LAYOUTS
+@import "./layouts/main/header/header-general";
+@import "./layouts/main/header/main-navigation";
+@import "./layouts/main/header/header-contacts";
+@import "./layouts/main/mobile-menu";
+
+@import "./layouts/main/hero/hero-general";
+@import "./layouts/main/hero/hero-overlay";
+@import "./layouts/main/hero/hero-button";
+
+@import "./layouts/main/benefit-section/benefit-section-general";
+@import "./layouts/main/benefit-section/benefit-section-list";
+@import "./layouts/main/benefit-section/benefit-section-icons";
+
+@import "./layouts/main/our-working-section/our-working-list";
+
+@import "./layouts/main/our-team-section/our-team-list";
+@import "./layouts/main/our-team-section/member-definition";
+
+@import "./layouts/main/our-clients-section/clients-list";
+@import "./layouts/main/our-clients-section/client-links";
+
+@import "./layouts/main/footer/footer-general";
+//CONTACTS
+@import "./layouts/main/footer/contacts-section/footer-contacts";
+@import "./layouts/main/footer/contacts-section/footer-contact-links";
+
+//JOIN US
+@import "./layouts/main/footer/join-us-section/join-us-general";
+@import "./layouts/main/footer/join-us-section/join-us-link-icon";
+
+//MAILING
+@import "./layouts/main/footer/mailing-section/mailing-general";
+@import "./layouts/main/footer/mailing-section/mailing-form";
+@import "./layouts/main/footer/mailing-section/mailing-input";
+@import "./layouts/main/footer/mailing-section/mailing-button-icon";
+
+@import "./layouts/main/modal/hero-backdrop";
+@import "./layouts/main/modal/hero-modal";
+@import "./layouts/main/modal/hero-button";
+@import "./layouts/main/hero-form/form-general";
+@import "./layouts/main/hero-form/hero-for-data";
+@import "./layouts/main/hero-form/hero-checkbox";
+@import "./layouts/main/hero-form/form-button";

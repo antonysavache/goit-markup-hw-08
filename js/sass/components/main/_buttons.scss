@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  @include border(transparent);
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  cursor: pointer;
+
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+  text-align: center;
+}
